@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+j4-dmenu-desktop \
+    --display-binary \
+    --dmenu="(cat ; (stest -flx $(echo $PATH | tr : ' ') | sort -u)) | dmenu -nb '#2d262d' -nf '#d9d1e0' -sb '#a3b549' -sf '#1a161c' -fn 'noto-11' "
+
